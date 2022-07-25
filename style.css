@@ -1,0 +1,167 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+/* =================== */
+/* =====NavBar======== */
+/* =================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    background-color: #000000;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    
+}
+
+/* Line by logo */
+
+div.line::before{
+    content: '';
+    display: flex;
+    height: 35px;
+    width: 2px;
+    color: white;
+    background-color: #fff;
+    position: absolute;
+    left: 184px;
+    top: 15px;
+    /* border: 10px solid red; */
+}
+
+.logo {
+    width: 105px;
+    height: 40px;
+    border: none;
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    left: 55px;
+}
+
+.grow-list {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    position: relative;
+    left: -260px;
+}
+
+.list-item:nth-child(1):after{
+    content: '<';
+    transform: rotate(4.7405rad);
+    position: relative;
+    left: 5px;
+    margin: 1px;
+    padding: 1px;
+    opacity: 0.9;
+}
+
+/* clippy path but its not working properly */
+/* .list-item:nth-child(1):after{
+    content: '';
+    position: absolute;
+    clip-path: polygon(51% 100%, 96% 3%, 100% 1%, 53% 100%, 41% 76%, 3% 0, 0 0);
+    color: #fff;
+    background-color: rgb(255, 255, 255);
+    height: -1px;
+    width: 5px;
+    left: 66px;
+    display: flex;
+    padding: 6px;
+    font-weight: 900;
+    background-color: 60px solid rgb(255, 255, 255);
+} */
+
+.list-item {
+    display: flex;
+    margin: 10px;
+    padding: 0px 10px;
+}
+
+.button-small {
+    position: relative;
+    right: 20px;
+    margin: 9px;
+    padding: 12px;
+    color: #fff;
+    height: 40px;
+    width: 130px;
+    background-color: #BA0CC5;
+    border: none;
+    border: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* =================== */
+/* =====Hero section=== */
+/* =================== */
+
+div.hero {
+    background-image: url(./assets/bg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 100%;
+    z-index: -1;
+}
+
+h1.hero-heading{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 170px;
+    left: 298px;
+    width: 655px;
+    height: 150px;
+    font-size: 60px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+}
+
+p.hero-description{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 320px;
+    height: 30px;
+    width: 550px;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+button.button-large{
+    display: flex;
+    /* text-align: center; */
+    /* align-items: center; */
+    height: 40px;
+    width: 170px;
+    border: none;
+    color: #fff;
+    margin: 10px 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #ba0cc5;
+
+}
